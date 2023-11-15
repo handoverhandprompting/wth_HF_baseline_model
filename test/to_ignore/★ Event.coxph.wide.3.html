@@ -1,0 +1,578 @@
+<html xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<head>
+<title> R output </title>
+<link rel=stylesheet href="R2HTML.css" type=text/css>
+<object id="mathplayer" classid="clsid:32F66A20-7614-11D4-BD11-00104BD3F987"></object>
+<?import namespace="mml" implementation="#mathplayer"?>
+<script type="text/javascript" src="ASCIIMathML.js"></script>
+<link href="./runtime/styles/xp/grid.css" rel="stylesheet" type="text/css" ></link>
+<link href="gridR2HTML.css" rel="stylesheet" type="text/css" ></link>
+
+<script src="./runtime/lib/grid.js"></script>
+
+<script src="./gridR2HTML.js"></script>
+<script>
+   nequations=0;
+</script>
+</head>
+<body onload="translate()" bgcolor= FFFFFF >
+ <h2 > Model Summary</h2>
+<font class='call'>coxph(formula = Surv(Time_to_Event.months, Event) ~ NoDialysis.x.BUN.yes.x.BUN + </font><font class='call'>    Dialysis + Age.b30.855.se53.454_PSpline.M.x.LVEF_2D.b29.865_PSpline.M + </font><font class='call'>    ESD.yes.x.ESD + RDW_CV.yes.x.RDW_CV.b14.283_PSpline.M + IVSd.yes.x.IVSd + </font><font class='call'>    BMI.se25.999_PSpline.S + LVMI.yes.x.LVMI.se134.942.b199.801_PSpline.M + </font><font class='call'>    NT_proBNP.yes + NT_proBNP.yes.x.NT_proBNP.b2481.283_PSpline.S + </font><font class='call'>    PAOD + WBC.yes.x.WBC.b13.78_PSpline.S + BaselineDrug_Yes.x.GDMT_RAASB_equi_0.se140.135_PSpline.S + </font><font class='call'>    BaselineDrug_Yes.x.P2Y12_U_0 + AR.b0 + En_H + NYHA.12 + RVDd.yes.x.RVDd.b2.469_PSpline.S + </font><font class='call'>    BaselineDrug_Yes.x.UA_U_0 + ALT.yes.x.ALT.se15.614.b84.255_PSpline.S + </font><font class='call'>    Age.se30.855_PSpline.M + LAD.yes.x.LAD.b4.348_PSpline.M + </font><font class='call'>    EDVi.yes.x.EDVi.se81.503_PSpline.M, data = data.wide.2, method = "efron")</font>
+<p class='character'>*	N =&nbsp; 527</p>
+
+<p class='character'>Number of events =&nbsp; 153</p>
+
+
+<p align= center >
+<table cellspacing=0 border=1><caption align=bottom class=captiondataframe></caption>
+<tr><td>
+	<table border=0 class=dataframe>
+	<tbody> <tr class= firstline > <th></th><th>coef</th><th>exp(coef)</th><th>se(coef)</th><th>z</th><th>Pr(>|z|)</th> </tr>
+ <tr> 
+<tr><td class=firstcolumn>NoDialysis.x.BUN.yes.x.BUN</td>
+<td class=cellinside> 0.02690194796</td>
+<td class=cellinside> 1.02726707220</td>
+<td class=cellinside> 0.00507159141</td>
+<td class=cellinside> 5.30443913984</td>
+<td class=cellinside> 0.00000011302</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>Dialysis</td>
+<td class=cellinside> 1.27380441414</td>
+<td class=cellinside> 3.57442532201</td>
+<td class=cellinside> 0.38412117030</td>
+<td class=cellinside> 3.31615259100</td>
+<td class=cellinside> 0.00091265982</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>Age.b30.855.se53.454_PSpline.M.x.LVEF_2D.b29.865_PSpline.M</td>
+<td class=cellinside>-1.03846497552</td>
+<td class=cellinside> 0.35399766018</td>
+<td class=cellinside> 0.39745627920</td>
+<td class=cellinside>-2.61277788240</td>
+<td class=cellinside> 0.00898096491</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>ESD.yes.x.ESD</td>
+<td class=cellinside> 0.38592140617</td>
+<td class=cellinside> 1.47096905717</td>
+<td class=cellinside> 0.09541471246</td>
+<td class=cellinside> 4.04467399418</td>
+<td class=cellinside> 0.00005239598</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>RDW_CV.yes.x.RDW_CV.b14.283_PSpline.M</td>
+<td class=cellinside> 0.46134615052</td>
+<td class=cellinside> 1.58620782292</td>
+<td class=cellinside> 0.18428917179</td>
+<td class=cellinside> 2.50338175621</td>
+<td class=cellinside> 0.01230127773</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>IVSd.yes.x.IVSd</td>
+<td class=cellinside>-1.13103564513</td>
+<td class=cellinside> 0.32269888178</td>
+<td class=cellinside> 0.40901737250</td>
+<td class=cellinside>-2.76525086994</td>
+<td class=cellinside> 0.00568790337</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>BMI.se25.999_PSpline.S</td>
+<td class=cellinside> 0.47214443230</td>
+<td class=cellinside> 1.60342895393</td>
+<td class=cellinside> 0.20358714208</td>
+<td class=cellinside> 2.31912697172</td>
+<td class=cellinside> 0.02038815270</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>LVMI.yes.x.LVMI.se134.942.b199.801_PSpline.M</td>
+<td class=cellinside> 0.56457067143</td>
+<td class=cellinside> 1.75869256364</td>
+<td class=cellinside> 0.17699557268</td>
+<td class=cellinside> 3.18974459578</td>
+<td class=cellinside> 0.00142398580</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>NT_proBNP.yes</td>
+<td class=cellinside>-1.24551549229</td>
+<td class=cellinside> 0.28779251506</td>
+<td class=cellinside> 0.26481419574</td>
+<td class=cellinside>-4.70335621102</td>
+<td class=cellinside> 0.00000255919</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>NT_proBNP.yes.x.NT_proBNP.b2481.283_PSpline.S</td>
+<td class=cellinside> 1.15510990194</td>
+<td class=cellinside> 3.17437226804</td>
+<td class=cellinside> 0.24073161105</td>
+<td class=cellinside> 4.79833079215</td>
+<td class=cellinside> 0.00000159993</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>PAOD</td>
+<td class=cellinside> 1.07019856529</td>
+<td class=cellinside> 2.91595845062</td>
+<td class=cellinside> 0.31117897477</td>
+<td class=cellinside> 3.43917376191</td>
+<td class=cellinside> 0.00058349258</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>WBC.yes.x.WBC.b13.78_PSpline.S</td>
+<td class=cellinside> 1.10142873928</td>
+<td class=cellinside> 3.00846126160</td>
+<td class=cellinside> 0.46838691860</td>
+<td class=cellinside> 2.35153608167</td>
+<td class=cellinside> 0.01869607627</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>BaselineDrug_Yes.x.GDMT_RAASB_equi_0.se140.135_PSpline.S</td>
+<td class=cellinside> 0.70929159198</td>
+<td class=cellinside> 2.03255087317</td>
+<td class=cellinside> 0.31215425365</td>
+<td class=cellinside> 2.27224708197</td>
+<td class=cellinside> 0.02307159102</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>BaselineDrug_Yes.x.P2Y12_U_0</td>
+<td class=cellinside>-0.63997212033</td>
+<td class=cellinside> 0.52730712499</td>
+<td class=cellinside> 0.27812104754</td>
+<td class=cellinside>-2.30105605448</td>
+<td class=cellinside> 0.02138846287</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>AR.b0</td>
+<td class=cellinside>-0.44092809238</td>
+<td class=cellinside> 0.64343897307</td>
+<td class=cellinside> 0.18718602587</td>
+<td class=cellinside>-2.35556094713</td>
+<td class=cellinside> 0.01849476282</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>En_H</td>
+<td class=cellinside>-0.86374745538</td>
+<td class=cellinside> 0.42157926891</td>
+<td class=cellinside> 0.25442777464</td>
+<td class=cellinside>-3.39486306717</td>
+<td class=cellinside> 0.00068662933</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>NYHA.12</td>
+<td class=cellinside>-0.50158705740</td>
+<td class=cellinside> 0.60556882419</td>
+<td class=cellinside> 0.18665471551</td>
+<td class=cellinside>-2.68724557016</td>
+<td class=cellinside> 0.00720439649</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>RVDd.yes.x.RVDd.b2.469_PSpline.S</td>
+<td class=cellinside> 0.48696368938</td>
+<td class=cellinside> 1.62736751759</td>
+<td class=cellinside> 0.19115387052</td>
+<td class=cellinside> 2.54749583709</td>
+<td class=cellinside> 0.01084991476</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>BaselineDrug_Yes.x.UA_U_0</td>
+<td class=cellinside>-0.52800948913</td>
+<td class=cellinside> 0.58977776111</td>
+<td class=cellinside> 0.24550786814</td>
+<td class=cellinside>-2.15068255504</td>
+<td class=cellinside> 0.03150126422</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>ALT.yes.x.ALT.se15.614.b84.255_PSpline.S</td>
+<td class=cellinside> 0.43257239989</td>
+<td class=cellinside> 1.54121705520</td>
+<td class=cellinside> 0.17558447526</td>
+<td class=cellinside> 2.46361416210</td>
+<td class=cellinside> 0.01375440857</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>Age.se30.855_PSpline.M</td>
+<td class=cellinside> 0.92164330253</td>
+<td class=cellinside> 2.51341730313</td>
+<td class=cellinside> 0.46052830313</td>
+<td class=cellinside> 2.00127396355</td>
+<td class=cellinside> 0.04536287399</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>LAD.yes.x.LAD.b4.348_PSpline.M</td>
+<td class=cellinside> 0.47832451265</td>
+<td class=cellinside> 1.61336895708</td>
+<td class=cellinside> 0.19343731523</td>
+<td class=cellinside> 2.47276236277</td>
+<td class=cellinside> 0.01340732616</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>EDVi.yes.x.EDVi.se81.503_PSpline.M</td>
+<td class=cellinside> 0.41048445193</td>
+<td class=cellinside> 1.50754794274</td>
+<td class=cellinside> 0.20586386354</td>
+<td class=cellinside> 1.99396069263</td>
+<td class=cellinside> 0.04615635033</td> </tr>
+ 
+	</tbody>
+</table>
+ </td></table>
+ <br>
+
+<br>&nbsp;
+
+
+<p align= center >
+<table cellspacing=0 border=1><caption align=bottom class=captiondataframe></caption>
+<tr><td>
+	<table border=0 class=dataframe>
+	<tbody> <tr class= firstline > <th></th><th>exp(coef)</th><th>exp(-coef)</th><th>lower .95</th><th>upper .95</th> </tr>
+ <tr> 
+<tr><td class=firstcolumn>NoDialysis.x.BUN.yes.x.BUN</td>
+<td class=cellinside>1.027267</td>
+<td class=cellinside>0.973457</td>
+<td class=cellinside>1.017106</td>
+<td class=cellinside>1.037529</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>Dialysis</td>
+<td class=cellinside>3.574425</td>
+<td class=cellinside>0.279765</td>
+<td class=cellinside>1.683611</td>
+<td class=cellinside>7.588759</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>Age.b30.855.se53.454_PSpline.M.x.LVEF_2D.b29.865_PSpline.M</td>
+<td class=cellinside>0.353998</td>
+<td class=cellinside>2.824877</td>
+<td class=cellinside>0.162437</td>
+<td class=cellinside>0.771464</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>ESD.yes.x.ESD</td>
+<td class=cellinside>1.470969</td>
+<td class=cellinside>0.679824</td>
+<td class=cellinside>1.220075</td>
+<td class=cellinside>1.773457</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>RDW_CV.yes.x.RDW_CV.b14.283_PSpline.M</td>
+<td class=cellinside>1.586208</td>
+<td class=cellinside>0.630434</td>
+<td class=cellinside>1.105332</td>
+<td class=cellinside>2.276289</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>IVSd.yes.x.IVSd</td>
+<td class=cellinside>0.322699</td>
+<td class=cellinside>3.098864</td>
+<td class=cellinside>0.144758</td>
+<td class=cellinside>0.719372</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>BMI.se25.999_PSpline.S</td>
+<td class=cellinside>1.603429</td>
+<td class=cellinside>0.623663</td>
+<td class=cellinside>1.075861</td>
+<td class=cellinside>2.389700</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>LVMI.yes.x.LVMI.se134.942.b199.801_PSpline.M</td>
+<td class=cellinside>1.758693</td>
+<td class=cellinside>0.568604</td>
+<td class=cellinside>1.243171</td>
+<td class=cellinside>2.487991</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>NT_proBNP.yes</td>
+<td class=cellinside>0.287793</td>
+<td class=cellinside>3.474726</td>
+<td class=cellinside>0.171265</td>
+<td class=cellinside>0.483604</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>NT_proBNP.yes.x.NT_proBNP.b2481.283_PSpline.S</td>
+<td class=cellinside>3.174372</td>
+<td class=cellinside>0.315023</td>
+<td class=cellinside>1.980372</td>
+<td class=cellinside>5.088256</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>PAOD</td>
+<td class=cellinside>2.915958</td>
+<td class=cellinside>0.342940</td>
+<td class=cellinside>1.584548</td>
+<td class=cellinside>5.366083</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>WBC.yes.x.WBC.b13.78_PSpline.S</td>
+<td class=cellinside>3.008461</td>
+<td class=cellinside>0.332396</td>
+<td class=cellinside>1.201304</td>
+<td class=cellinside>7.534182</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>BaselineDrug_Yes.x.GDMT_RAASB_equi_0.se140.135_PSpline.S</td>
+<td class=cellinside>2.032551</td>
+<td class=cellinside>0.491993</td>
+<td class=cellinside>1.102390</td>
+<td class=cellinside>3.747551</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>BaselineDrug_Yes.x.P2Y12_U_0</td>
+<td class=cellinside>0.527307</td>
+<td class=cellinside>1.896428</td>
+<td class=cellinside>0.305722</td>
+<td class=cellinside>0.909496</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>AR.b0</td>
+<td class=cellinside>0.643439</td>
+<td class=cellinside>1.554149</td>
+<td class=cellinside>0.445835</td>
+<td class=cellinside>0.928625</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>En_H</td>
+<td class=cellinside>0.421579</td>
+<td class=cellinside>2.372033</td>
+<td class=cellinside>0.256041</td>
+<td class=cellinside>0.694142</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>NYHA.12</td>
+<td class=cellinside>0.605569</td>
+<td class=cellinside>1.651340</td>
+<td class=cellinside>0.420032</td>
+<td class=cellinside>0.873060</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>RVDd.yes.x.RVDd.b2.469_PSpline.S</td>
+<td class=cellinside>1.627368</td>
+<td class=cellinside>0.614489</td>
+<td class=cellinside>1.118859</td>
+<td class=cellinside>2.366988</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>BaselineDrug_Yes.x.UA_U_0</td>
+<td class=cellinside>0.589778</td>
+<td class=cellinside>1.695554</td>
+<td class=cellinside>0.364512</td>
+<td class=cellinside>0.954256</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>ALT.yes.x.ALT.se15.614.b84.255_PSpline.S</td>
+<td class=cellinside>1.541217</td>
+<td class=cellinside>0.648838</td>
+<td class=cellinside>1.092461</td>
+<td class=cellinside>2.174311</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>Age.se30.855_PSpline.M</td>
+<td class=cellinside>2.513417</td>
+<td class=cellinside>0.397865</td>
+<td class=cellinside>1.019207</td>
+<td class=cellinside>6.198220</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>LAD.yes.x.LAD.b4.348_PSpline.M</td>
+<td class=cellinside>1.613369</td>
+<td class=cellinside>0.619821</td>
+<td class=cellinside>1.104281</td>
+<td class=cellinside>2.357153</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>EDVi.yes.x.EDVi.se81.503_PSpline.M</td>
+<td class=cellinside>1.507548</td>
+<td class=cellinside>0.663329</td>
+<td class=cellinside>1.007023</td>
+<td class=cellinside>2.256850</td> </tr>
+ 
+	</tbody>
+</table>
+ </td></table>
+ <br>
+
+<hr  width=100% size=1>
+<p class='character'>*	Adjusted generalized R square =&nbsp; 0.2864</p>
+
+
+
+<p align= center >
+<table cellspacing=0 border=1><caption align=bottom class=captiondataframe></caption>
+<tr><td>
+	<table border=0 class=dataframe>
+	<tbody> <tr class= firstline > <th></th><th>rsq</th><th>maxrsq</th> </tr>
+ <tr> 
+<tr><td class=firstcolumn></td>
+<td class=cellinside>0.2776</td>
+<td class=cellinside>0.9692</td> </tr>
+ 
+	</tbody>
+</table>
+ </td></table>
+ <br>
+
+<p class='character'>*	Proportional hazards assumption:</p>
+
+
+<p align= center >
+<table cellspacing=0 border=1><caption align=bottom class=captiondataframe></caption>
+<tr><td>
+	<table border=0 class=dataframe>
+	<tbody> <tr class= firstline > <th></th><th>chisq</th><th>df</th><th>p</th> </tr>
+ <tr> 
+<tr><td class=firstcolumn>NoDialysis.x.BUN.yes.x.BUN</td>
+<td class=cellinside> 1.69895755</td>
+<td class=cellinside> 1.00000000</td>
+<td class=cellinside> 0.19242436</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>Dialysis</td>
+<td class=cellinside> 1.04303252</td>
+<td class=cellinside> 1.00000000</td>
+<td class=cellinside> 0.30711723</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>Age.b30.855.se53.454_PSpline.M.x.LVEF_2D.b29.865_PSpline.M</td>
+<td class=cellinside> 0.11113836</td>
+<td class=cellinside> 1.00000000</td>
+<td class=cellinside> 0.73885184</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>ESD.yes.x.ESD</td>
+<td class=cellinside> 2.70702703</td>
+<td class=cellinside> 1.00000000</td>
+<td class=cellinside> 0.09990702</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>RDW_CV.yes.x.RDW_CV.b14.283_PSpline.M</td>
+<td class=cellinside> 1.60152055</td>
+<td class=cellinside> 1.00000000</td>
+<td class=cellinside> 0.20568786</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>IVSd.yes.x.IVSd</td>
+<td class=cellinside> 0.06276252</td>
+<td class=cellinside> 1.00000000</td>
+<td class=cellinside> 0.80218177</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>BMI.se25.999_PSpline.S</td>
+<td class=cellinside> 0.26046668</td>
+<td class=cellinside> 1.00000000</td>
+<td class=cellinside> 0.60979972</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>LVMI.yes.x.LVMI.se134.942.b199.801_PSpline.M</td>
+<td class=cellinside> 0.31578686</td>
+<td class=cellinside> 1.00000000</td>
+<td class=cellinside> 0.57415066</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>NT_proBNP.yes</td>
+<td class=cellinside> 0.24814914</td>
+<td class=cellinside> 1.00000000</td>
+<td class=cellinside> 0.61838135</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>NT_proBNP.yes.x.NT_proBNP.b2481.283_PSpline.S</td>
+<td class=cellinside> 0.05072078</td>
+<td class=cellinside> 1.00000000</td>
+<td class=cellinside> 0.82181377</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>PAOD</td>
+<td class=cellinside> 1.39225598</td>
+<td class=cellinside> 1.00000000</td>
+<td class=cellinside> 0.23802449</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>WBC.yes.x.WBC.b13.78_PSpline.S</td>
+<td class=cellinside> 0.03004541</td>
+<td class=cellinside> 1.00000000</td>
+<td class=cellinside> 0.86238724</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>BaselineDrug_Yes.x.GDMT_RAASB_equi_0.se140.135_PSpline.S</td>
+<td class=cellinside> 1.47480921</td>
+<td class=cellinside> 1.00000000</td>
+<td class=cellinside> 0.22458844</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>BaselineDrug_Yes.x.P2Y12_U_0</td>
+<td class=cellinside> 0.10442852</td>
+<td class=cellinside> 1.00000000</td>
+<td class=cellinside> 0.74657860</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>AR.b0</td>
+<td class=cellinside> 0.37306718</td>
+<td class=cellinside> 1.00000000</td>
+<td class=cellinside> 0.54133712</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>En_H</td>
+<td class=cellinside> 1.33305950</td>
+<td class=cellinside> 1.00000000</td>
+<td class=cellinside> 0.24826166</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>NYHA.12</td>
+<td class=cellinside> 0.10863360</td>
+<td class=cellinside> 1.00000000</td>
+<td class=cellinside> 0.74170515</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>RVDd.yes.x.RVDd.b2.469_PSpline.S</td>
+<td class=cellinside> 0.13118423</td>
+<td class=cellinside> 1.00000000</td>
+<td class=cellinside> 0.71720734</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>BaselineDrug_Yes.x.UA_U_0</td>
+<td class=cellinside> 2.44450028</td>
+<td class=cellinside> 1.00000000</td>
+<td class=cellinside> 0.11793744</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>ALT.yes.x.ALT.se15.614.b84.255_PSpline.S</td>
+<td class=cellinside> 0.58944254</td>
+<td class=cellinside> 1.00000000</td>
+<td class=cellinside> 0.44263477</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>Age.se30.855_PSpline.M</td>
+<td class=cellinside> 0.00205666</td>
+<td class=cellinside> 1.00000000</td>
+<td class=cellinside> 0.96382796</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>LAD.yes.x.LAD.b4.348_PSpline.M</td>
+<td class=cellinside> 0.74558760</td>
+<td class=cellinside> 1.00000000</td>
+<td class=cellinside> 0.38787683</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>EDVi.yes.x.EDVi.se81.503_PSpline.M</td>
+<td class=cellinside> 0.53943331</td>
+<td class=cellinside> 1.00000000</td>
+<td class=cellinside> 0.46266767</td> </tr>
+ <tr> 
+<tr><td class=firstcolumn>GLOBAL</td>
+<td class=cellinside>15.67835478</td>
+<td class=cellinside>23.00000000</td>
+<td class=cellinside> 0.86868823</td> </tr>
+ 
+	</tbody>
+</table>
+ </td></table>
+ <br>
+
+<p class='character'>*	VIF:</p>
+
+
+
+<p align= center >
+<table cellspacing=0 border=1><caption align=bottom class=captiondataframe></caption>
+<tr><td>
+	<table border=0 class=dataframe>
+	<tbody> <tr class= firstline > <th></th><th>NoDialysis.x.BUN.yes.x.BUN</th><th>Dialysis</th><th>Age.b30.855.se53.454_PSpline.M.x.LVEF_2D.b29.865_PSpline.M</th><th>ESD.yes.x.ESD</th><th>RDW_CV.yes.x.RDW_CV.b14.283_PSpline.M</th><th>IVSd.yes.x.IVSd</th><th>BMI.se25.999_PSpline.S</th><th>LVMI.yes.x.LVMI.se134.942.b199.801_PSpline.M</th><th>NT_proBNP.yes</th><th>NT_proBNP.yes.x.NT_proBNP.b2481.283_PSpline.S</th><th>PAOD</th><th>WBC.yes.x.WBC.b13.78_PSpline.S</th><th>BaselineDrug_Yes.x.GDMT_RAASB_equi_0.se140.135_PSpline.S</th><th>BaselineDrug_Yes.x.P2Y12_U_0</th><th>AR.b0</th><th>En_H</th><th>NYHA.12</th><th>RVDd.yes.x.RVDd.b2.469_PSpline.S</th><th>BaselineDrug_Yes.x.UA_U_0</th><th>ALT.yes.x.ALT.se15.614.b84.255_PSpline.S</th><th>Age.se30.855_PSpline.M</th><th>LAD.yes.x.LAD.b4.348_PSpline.M</th><th>EDVi.yes.x.EDVi.se81.503_PSpline.M</th> </tr>
+ <tr> 
+<tr><td class=firstcolumn></td>
+<td class=cellinside>1.4577</td>
+<td class=cellinside>1.2487</td>
+<td class=cellinside>1.0944</td>
+<td class=cellinside>1.5197</td>
+<td class=cellinside>1.2309</td>
+<td class=cellinside>1.0865</td>
+<td class=cellinside>1.1934</td>
+<td class=cellinside>1.1189</td>
+<td class=cellinside>1.4581</td>
+<td class=cellinside>1.4904</td>
+<td class=cellinside>1.1226</td>
+<td class=cellinside>1.0687</td>
+<td class=cellinside>1.0759</td>
+<td class=cellinside>1.0840</td>
+<td class=cellinside>1.0646</td>
+<td class=cellinside>1.2696</td>
+<td class=cellinside>1.1076</td>
+<td class=cellinside>1.0921</td>
+<td class=cellinside>1.1752</td>
+<td class=cellinside>1.0754</td>
+<td class=cellinside>1.0852</td>
+<td class=cellinside>1.2019</td>
+<td class=cellinside>1.3617</td> </tr>
+ 
+	</tbody>
+</table>
+ </td></table>
+ <br>
+
+<p class='character'>*	Concordance:</p>
+
+
+<p align= center >
+<table cellspacing=0 border=1>
+<caption align=bottom class=captiondataframe></caption>
+<tr><td>
+	<table border=0 class=dataframe>
+	<tbody> 
+	<tr class= firstline > 
+		<th>&nbsp;  </th>
+		<th>Concordance  </th>
+		<th>Se</th> 
+	</tr> 
+<tr> 
+<td class=firstcolumn> 
+</td>
+<td class=cellinside>0.7742
+</td>
+<td class=cellinside>0.0182
+</td></tr>
+ 
+	</tbody>
+</table>
+ </td></table>
+ <br>
+
+<p class='character'>R version 4.3.0 (2023-04-21 ucrt)</p>
+
+<hr size=1>
+<font size=-1>
+	 Generated on: <i>Mon Jun 19 12:09:34 2023</i> - <b>R2HTML</b> 
+<hr size=1>
+	</body>
+</html>
