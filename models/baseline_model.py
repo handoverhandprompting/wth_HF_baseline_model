@@ -404,7 +404,7 @@ def baseline_view():
 			st.write(st.session_state['risk_value'])
 			st.error('輸入有誤，請檢查欄位')
 		finally:
-			st.rerun()
+			st.experimental_rerun()
 
 # TODO: 數值計算有誤，用e (function exp()) 計算
 # TODO: 取消文字輸入再檢查機制，用數字輸入模式(DONE)
